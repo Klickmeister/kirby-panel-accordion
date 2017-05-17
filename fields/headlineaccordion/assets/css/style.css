@@ -1,0 +1,15 @@
+.contains-headlineaccordion .field-with-headline {
+	padding-top: 0;
+}
+
+.field-with-headline > h2:hover {
+	cursor: pointer;
+}
+
+.headline-content {
+	display: none;
+}
+
+textarea.input {
+	max-height: 300px; /* fix */
+}
