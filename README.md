@@ -24,3 +24,7 @@ fields:
 ```  
 
 The content of every headline is collapsed by default.
+
+## Preview
+
+![Screenshow](/screenshot.png)
