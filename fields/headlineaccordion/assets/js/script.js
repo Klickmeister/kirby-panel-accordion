@@ -48,11 +48,17 @@
 
 					// Hide other content-panels
 					$('.headline-content').each(function(index, el) {
-						if($(el).attr('data-headline-content') == id) {
-							$(el).toggle(300);
+						// always show fields with errors
+						if($(el).find('.field-with-error').length > 0) {
+							$(el).show();
 						}
 						else {
-							$(el).hide();
+							if($(el).attr('data-headline-content') == id) {
+								$(el).toggle(300);
+							}
+							else {
+								$(el).hide();
+							}
 						}
 					});
 
