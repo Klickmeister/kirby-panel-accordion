@@ -54,7 +54,7 @@
 						}
 						else {
 							if($(el).attr('data-headline-content') == id) {
-								$(el).toggle(300);
+								$(el).show(300);
 							}
 							else {
 								$(el).hide();
