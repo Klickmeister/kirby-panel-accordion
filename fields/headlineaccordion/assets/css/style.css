@@ -7,7 +7,17 @@
 }
 
 .headline-content {
-	display: none;
+	height: 100%;
+	max-height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	/*-webkit-transition: max-height .3s; /* Safari */
+	/*transition: max-height .3s;*/
+}
+
+.headline-content.-is-visible {
+	max-height: 100%;
+	visibility: visible;
 }
 
 textarea.input {

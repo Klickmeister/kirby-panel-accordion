@@ -50,14 +50,14 @@
 					$('.headline-content').each(function(index, el) {
 						// always show fields with errors
 						if($(el).find('.field-with-error').length > 0) {
-							$(el).show();
+							$(el).addClass('-is-visible');
 						}
 						else {
 							if($(el).attr('data-headline-content') == id) {
-								$(el).show(300);
+								$(el).addClass('-is-visible');
 							}
 							else {
-								$(el).hide();
+								$(el).removeClass('-is-visible');
 							}
 						}
 					});
